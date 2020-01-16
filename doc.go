@@ -12,13 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// The install package registers all included container providers when imported
-package install
-
-import (
-	_ "github.com/google/cadvisor/container/containerd/install"
-	_ "github.com/google/cadvisor/container/crio/install"
-	_ "github.com/google/cadvisor/container/docker/install"
-	_ "github.com/google/cadvisor/container/mesos/install"
-	_ "github.com/google/cadvisor/container/systemd/install"
-)
+package cadvisor

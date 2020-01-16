@@ -35,7 +35,13 @@ import (
 	"github.com/google/cadvisor/version"
 
 	// Register container providers
-	_ "github.com/google/cadvisor/container/install"
+	_ "github.com/google/cadvisor/container/containerd"
+	_ "github.com/google/cadvisor/container/crio"
+	_ "github.com/google/cadvisor/container/docker"
+	_ "github.com/google/cadvisor/container/libcontainer"
+	_ "github.com/google/cadvisor/container/mesos"
+	_ "github.com/google/cadvisor/container/raw"
+	_ "github.com/google/cadvisor/container/systemd"
 
 	// Register CloudProviders
 	_ "github.com/google/cadvisor/utils/cloudinfo/aws"
